@@ -5,6 +5,7 @@
  import LWM from './Image/LWM.PNG'
  import Portfolio from './Image/Portfolio.PNG'
  import FaceRecogination from './Image/Face.PNG'
+ import Calculator from './Image/Calculator.PNG'
  import bg from './Image/noisy.png'
  
 
@@ -28,21 +29,22 @@
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
       }
 `
-const title = ["Local welfare management :" , "My portfolio :" , "Face Recogination"];
+const title = ["Local welfare management :" , "My portfolio :" , "Face Recogination :" , "Vue-Calculator"];
 const discription = ["A dynamic website that connected to MySQL database by PHP as the backend language",
                     "My first portfolio page build using Reactjs and styled components" , 
-					"An offline image recogination program using Python library called opencv-python"]
+		    "An offline image recogination program using Python library called opencv-python" ,
+		    "A Simple calculator using Vue Js with Add , Subract , Multiple and Division operation"]
 const url = ['https://github.com/yogesh7401/Local_welfare_management','https://github.com/yogesh7401/my-portfolio',
-			'https://github.com/yogesh7401/imageRecoginationPy'];
-const image = [LWM,Portfolio,FaceRecogination];
-const imageId = [1,2,3];
+			'https://github.com/yogesh7401/imageRecoginationPy','https://github.com/yogesh7401/calculator'];
+const image = [LWM,Portfolio,FaceRecogination,Calculator];
+const imageId = [1,2,3,4];
  
 class Works extends React.Component {
   constructor(props) {
     super(props);
  
     this.state = {
-      list: [0,1,2],
+      list: [0,1,2,3],
     };
   }
  

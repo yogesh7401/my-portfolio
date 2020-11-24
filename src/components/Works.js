@@ -7,7 +7,7 @@
  import FaceRecogination from './Image/Face.PNG'
  import Calculator from './Image/Calculator.PNG'
  import bg from './Image/noisy.png'
- 
+
 
  const StyledWorks = styled.div`
     background-image: url(${bg});

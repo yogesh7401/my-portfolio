@@ -29,41 +29,58 @@
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
       }
 `
-const title = ["Local welfare management :" , "My portfolio :" , "Face Recogination :" , "Vue-Calculator"];
-const discription = ["A dynamic website that connected to MySQL database by PHP as the backend language",
-                    "My first portfolio page build using Reactjs and styled components" , 
-		    "An offline image recogination program using Python library called opencv-python" ,
-		    "A Simple calculator using Vue Js with Add , Subract , Multiple and Division operation"]
-const url = ['https://github.com/yogesh7401/Local_welfare_management','https://github.com/yogesh7401/my-portfolio',
-			'https://github.com/yogesh7401/imageRecoginationPy','https://github.com/yogesh7401/calculator'];
-const image = [LWM,Portfolio,FaceRecogination,Calculator];
-const imageId = [1,2,3,4];
- 
-class Works extends React.Component {
-  constructor(props) {
-    super(props);
- 
-    this.state = {
-      list: [0,1,2,3],
-    };
-  }
- 
-  render() {
-    return (
-          <StyledWorks ClassName="card" id="WORKS">
-              <h3>MY WORKS :</h3>
-              <Cards>
-              {this.state.list.map(item => (
-                  <Card image={image[item]} 
-                        imageId={imageId[item]} 
-                        url={url[item]} 
-                        title={title[item]} 
-                        discription={discription[item]}></Card>
-                  ))}
-              </Cards>
-          </StyledWorks>
-    );
-  }
+
+function Works() {
+  const posts =
+  [
+    {
+      id: 1, 
+      title: "Local welfare management :", 
+      discription: "A dynamic website that connected to MySQL database by PHP as the backend language", 
+      url: 'https://github.com/yogesh7401/Local_welfare_management', 
+      image: LWM, 
+      imageId: '1'
+    }, 
+    {
+      id: 2, 
+      title: "My portfolio :", 
+      discription: "My first portfolio page build using Reactjs and styled components", 
+      url: 'https://github.com/yogesh7401/my-portfolio', 
+      image: Portfolio, 
+      imageId: '2'},
+    {
+      id: 3, 
+      title: "Face Recogination :", 
+      discription: "An offline image recogination program using Python library called opencv-python", 
+      url: 'https://github.com/yogesh7401/imageRecoginationPy', 
+      image: FaceRecogination, 
+      imageId: '3'},
+    {
+      id: 4, 
+      title: "Vue-Calculator :", 
+      discription: "A Simple calculator using Vue Js with Add , Subract , Multiple and Division operation", 
+      url: 'https://github.com/yogesh7401/calculator', 
+      image: Calculator, 
+      imageId: '4'
+    }
+  ];
+  const content = posts.map((post) => (
+                    <Card key={post.id}
+                          image={post.image} 
+                          imageId={post.imageId} 
+                          url={post.url} 
+                          title={post.title} 
+                          discription={post.discription}>
+                    </Card>
+                  ))
+  return (
+    <StyledWorks ClassName="card" id="WORKS">
+      <h3>MY WORKS :</h3>
+        <Cards>
+          {content}
+        </Cards>
+    </StyledWorks>
+  );
 }
 
 export default Works;

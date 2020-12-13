@@ -12,13 +12,13 @@ const Icon = styled(SocialIcon)`
 function Social() 
 { 
   return (
-    <p>
+    <div>
         <Icon url="http://facebook.com/profile.php?id=100051837720812" bgColor="black" fgcolor="black" />
         <Icon url="http://instagram.com/_t_e_e_n__k_i_d/" bgColor="black" fgcolor="white" />
         <Icon url="http://github.com/yogesh7401" bgColor="black" fgcolor="white" />
         <Icon url="https://www.linkedin.com/in/yogesh-waran-ab08ab195/" bgColor="black" fgcolor="white" />
         
-    </p>);
+    </div>);
 } 
   
 export default Social; 

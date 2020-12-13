@@ -48,7 +48,7 @@ const Home = () => {
       <StyledHome >
         <div>
           <p>Hi There I am</p>
-          <p Class="h"> Yogeshwaran.</p>
+          <p className="h"> Yogeshwaran.</p>
           <p style={{textAlign:"center"}}>A full-stack developer in india ; 
             I'm interested in all parts of application  
             developement and this is my portfolio 

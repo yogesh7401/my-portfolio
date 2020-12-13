@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Background from './components/Background'
 import './App.css'
 import Navigation from './components/Navbar/Navbar'
-
+import LoadingScreen from './components/LoadingScreen'
 import Home from './components/Home'
 import About from './components/About'
 import Works from './components/Works'
@@ -11,18 +11,31 @@ import Skills from './components/Skills'
 import Footer from './components/Footer'
 
 function App() {
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 3000)    
+  }, [])
+
   return (
-  <div>
+  <>
+    {loading === false ?(
+    <>
     <Background id="HOME">
       <Navigation />
       <Home/>
     </Background>
     <About/>
-    <Works/>
+    <Works />
     <Skills/>
     <Inspiration/>
     <Footer/>
-  </div>
+    </>
+    ) : (
+      <LoadingScreen />
+    )}
+    
+  </>
   );
 }
 

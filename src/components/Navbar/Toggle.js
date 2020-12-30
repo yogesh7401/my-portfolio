@@ -46,10 +46,13 @@ const Ul = styled.ul`
  const StyledLink = styled(Link)`
   text-decoration: none;
   color: white;
-  text-shadow: 2px 2px #000000;
   font-weight: bold;
   font-size: 15px;
 
+  &:hover {
+  text-decoration: none;
+  color: #0D2538
+  }
   
  `;
 

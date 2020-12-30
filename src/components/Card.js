@@ -37,7 +37,6 @@ const StyledCard = styled.div`
     }
     p{
         color: black;
-        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
         font-size:13px;
         margin-left: 12px;
         margin-right: 12px;
@@ -48,9 +47,11 @@ function Card({ image, imageId, url ,title , discription}){
     return(
         <StyledCard id="hover">
             <a  href={ url }>
-            <img src={ image }  alt={ imageId } id="card" style={{height:"150px",marginLeft:"10px",marginTop:"10px"}} />
-            <p><b>{ title } </b></p>
-            <p style={{textIndent:"15px"}}>{ discription }</p>
+            <img src={ image }  alt={ imageId } id="card" height='130' style={{marginLeft:"10px",marginTop:"10px"}} />
+            <p style={{marginTop:"10px"}}><b>{ title } </b>
+            <br />
+            { discription }</p>
+            
             </a>
         </StyledCard>
     );

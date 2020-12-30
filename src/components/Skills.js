@@ -1,80 +1,74 @@
 import styled from 'styled-components'
 import React from 'react' 
-import Progress from 'gogolee-react-progress-circle';
-import 'gogolee-react-progress-circle/lib/main.css';
+import ProgressBar from 'react-bootstrap/esm/ProgressBar'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const StyledSkill = styled.div`
     padding-top:50px;
     padding-bottom:50px;
     background : grey;
-
 .out{
-    display: flex;
-    width: 900px;
-    margin-left:auto;
-    margin-right:auto;
-} 
-@media (max-width: 650px) {
-    .out{
-        display: inline;
-    }
-}
-@media (max-width: 950px) {
-    .out{
-        width: 600px;
-    }
-}`
+    margin-top: 50px;
+} `
+
+
 function Skills(){
-    return(
-        <StyledSkill>
-        <h3 style={{marginLeft:"100px"}}   id="SKILLS">SKILLS :</h3>
-            <div className="out" style={{marginTop:"50px"}}>
-                <span id="circle">
-                    <Progress number={90} width={300} height={200} isTextShown={false}>
-                        <div style={{color: '#0D2538'}}>
-                            <b>HTML</b>
-                        </div>
-                    </Progress>
-                </span><br/>
-                <span id="circle">
-                    <Progress number={85} width={300} height={200} isTextShown={false}>
-                        <div style={{color: '#0D2538'}}>
-                            <b>CSS</b>
-                        </div>
-                    </Progress>
-                </span><br/>
-                <span id="circle">
-                    <Progress number={70} width={300} height={200} isTextShown={false}>
-                        <div style={{color: '#0D2538'}}>
-                            <b>PHP</b>
-                        </div>
-                    </Progress>
-                </span>
-            </div><br/>
-            <div className="out">
-                <span id="circle">
-                    <Progress number={70} width={300} height={200} isTextShown={false}>
-                        <div style={{color: '#0D2538'}}>
-                            <b>JAVASCRIPT</b>
-                        </div>
-                    </Progress>
-                </span><br/>
-                <span id="circle">
-                    <Progress number={65} width={300} height={200} isTextShown={false}>
-                        <div style={{color: '#0D2538'}}>
-                            <b>JAVA</b>
-                        </div>
-                    </Progress>
-                </span><br/>
-                <span id="circle">
-                    <Progress number={55} width={300} height={200} isTextShown={false}>
-                        <div style={{color: '#0D2538'}}>
-                            <b>C/C++</b>
-                        </div>
-                    </Progress>
-                </span>
-            </div>
-        </StyledSkill>
+
+const skills =
+  [
+    {
+        id: 1, 
+        language: 'HTML',
+        progress: '90'
+    },
+    {
+        id: 2, 
+        language: 'CSS',
+        progress: '80'
+    },
+    {
+        id: 3, 
+        language: 'PHP',
+        progress: '70'
+    },
+    {
+        id: 4, 
+        language: 'Java Script',
+        progress: '70'
+    },
+    {
+        id: 5, 
+        language: 'Java',
+        progress: '70'
+    },
+    {
+        id: 6, 
+        language: 'C/C++',
+        progress: '65'
+    },
+  ];
+  
+const content = skills.map((skill) => (
+    <Row style={{marginTop:"30px"}} key={skill.id} >
+        <Col xs={2} ></Col>
+        <Col xs={8}>
+            <h5 style={{marginTop:"20px"}}>{skill.language}</h5>
+            <ProgressBar animated now={skill.progress} label={`${skill.progress}%`} style={{marginTop:"20px"}} />
+        </Col>
+        <Col xs={2}></Col>
+    </Row>
+  ))
+    
+return(
+    <StyledSkill>
+        <h4 style={{textAlign:'center'}}   id="SKILLS">SKILLS </h4>
+        <Container className="out">
+                {content}
+        </Container>
+    </StyledSkill>
     );
 }
 

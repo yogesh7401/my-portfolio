@@ -6,7 +6,6 @@ const StyledFooter = styled.div`
     color:grey;
     height: 50px;
     padding-top: 30px;
-    font-family: "open san";
     font-size: 12px;
 p{
     width:240px;
@@ -18,7 +17,7 @@ p{
 function Footer(){
  return(
      <StyledFooter>
-         <p>© 2020 Yogeshwaran C | All rights reserved</p>
+         <p>© {(new Date().getFullYear())} Yogeshwaran C | All rights reserved</p>
      </StyledFooter>
  )
 }

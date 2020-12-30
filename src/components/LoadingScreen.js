@@ -15,7 +15,7 @@ const Loader = styled.div`
 function LoadingScreen() 
 { 
     return (
-        <div style={{background: 'black'}}>
+        <div>
             <Loader />
         </div>
       );

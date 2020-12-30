@@ -3,11 +3,11 @@ import {SocialIcon } from 'react-social-icons';
 import styled from 'styled-components';
 
 const Icon = styled(SocialIcon)`
-    margin-left: 22px;
+    margin-left: 20px;
     margin-top: 80px;
     
     @media (max-width: 600px){
-        margin-left:10px;
+        margin-left:8px;
     }`;
 function Social() 
 { 

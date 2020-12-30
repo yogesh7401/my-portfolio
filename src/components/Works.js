@@ -6,6 +6,7 @@
  import Portfolio from './Image/Portfolio.PNG'
  import FaceRecogination from './Image/Face.PNG'
  import Calculator from './Image/Calculator.PNG'
+ import SGHRM from './Image/sghrm.jpg'
  import bg from './Image/noisy.png'
 
 
@@ -47,14 +48,16 @@ function Works() {
       discription: "My first portfolio page build using Reactjs and styled components", 
       url: 'https://github.com/yogesh7401/my-portfolio', 
       image: Portfolio, 
-      imageId: '2'},
+      imageId: '2'
+    },
     {
       id: 3, 
       title: "Face Recogination :", 
       discription: "An offline image recogination program using Python library called opencv-python", 
       url: 'https://github.com/yogesh7401/imageRecoginationPy', 
       image: FaceRecogination, 
-      imageId: '3'},
+      imageId: '3'
+    },
     {
       id: 4, 
       title: "Vue-Calculator :", 
@@ -62,6 +65,14 @@ function Works() {
       url: 'https://github.com/yogesh7401/calculator', 
       image: Calculator, 
       imageId: '4'
+    },
+    {
+      id: 5, 
+      title: "SG-HRM Solutions :", 
+      discription: "A static responsive webpage for an startup company, Each page is coded in HTML5 by using Bootstrap 4", 
+      url: 'https://github.com/yogesh7401/SG-HRM_solutions', 
+      image: SGHRM, 
+      imageId: '5'
     }
   ];
   const content = posts.map((post) => (
@@ -75,7 +86,7 @@ function Works() {
                   ))
   return (
     <StyledWorks ClassName="card" id="WORKS">
-      <h3>MY WORKS :</h3>
+      <h4 style={{textAlign:"center"}}>MY WORKS </h4>
         <Cards>
           {content}
         </Cards>

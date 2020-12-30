@@ -7,11 +7,11 @@ const StyledHome = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
 
-    .h{
+    h2{
       font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-      font-size: 50px;
       color: white;
-      text-shadow: 2px 2px #000000;
+      -webkit-text-stroke-width: 0.5px;
+      -webkit-text-stroke-color: black;
     }
     div{
       width: 400px;
@@ -21,7 +21,8 @@ const StyledHome = styled.div`
     p{
       color: white;
       font-size: 20px;
-      text-shadow: 2px 2px #000000;
+      -webkit-text-stroke-width: 0.5px;
+      -webkit-text-stroke-color: black;
     }
 
     @media (max-width: 600px){
@@ -31,7 +32,7 @@ const StyledHome = styled.div`
         padding-left: 10px;
         padding-rigth: 10px;
       }
-      .h{
+      h5{
         font-size: 40px
       }
       p{
@@ -48,7 +49,7 @@ const Home = () => {
       <StyledHome >
         <div>
           <p>Hi There I am</p>
-          <p className="h"> Yogeshwaran.</p>
+          <h2> Yogeshwaran.</h2>
           <p style={{textAlign:"center"}}>A full-stack developer in india ; 
             I'm interested in all parts of application  
             developement and this is my portfolio 

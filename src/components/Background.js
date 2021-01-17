@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import bgimg from './Image/bgimage.jpeg';
+import bgimg from './Image/background.jpg';
 
 const Background = styled.div`
-background: url(${bgimg}) no-repeat top center;
+background: url(${bgimg}) no-repeat center bottom;
 position: relative;
 height: 700px;
 min-height: 500px;

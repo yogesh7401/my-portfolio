@@ -21,7 +21,7 @@ function App() {
   <>
     {loading === false ?(
     <>
-    <Background id="HOME">
+    <Background id="Home">
       <Navigation />
       <Home/>
     </Background>

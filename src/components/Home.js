@@ -1,17 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 import Social from './Social.js'
+import downArrow from './Image/down.svg'
+import { Link } from "react-scroll";
+
+
 const StyledHome = styled.div`
     position: absolute;
-    top: 50%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    h2{
-      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-      color: white;
-      -webkit-text-stroke-width: 0.5px;
-      -webkit-text-stroke-color: black;
+    h3{
+      font-family: Arial, sans-serif;
+      color: black;
+      margin-bottom: 1.5px;
+
     }
     div{
       width: 400px;
@@ -19,10 +23,10 @@ const StyledHome = styled.div`
       margin-rigth: auto;
     }
     p{
-      color: white;
-      font-size: 20px;
-      -webkit-text-stroke-width: 0.5px;
-      -webkit-text-stroke-color: black;
+      margin-bottom: 1.5px;
+      color: black;
+      font-size: 18px;
+      font-weight: 2px;
     }
 
     @media (max-width: 600px){
@@ -41,6 +45,13 @@ const StyledHome = styled.div`
     }
 `
 
+const Down = styled.div`
+    
+    text-align: center;
+    position:absolute;
+    bottom:0;
+    height:40px;
+`
 const Home = () => {
     return (
       <>
@@ -49,14 +60,23 @@ const Home = () => {
       <StyledHome >
         <div>
           <p>Hi There I am</p>
-          <h2> Yogeshwaran.</h2>
-          <p style={{textAlign:"center"}}>A full-stack developer in india ; 
+          <h3>Yogeshwaran.</h3>
+          <p style={{textAlign:"center"}}>A full-stack developer in india, 
             I'm interested in all parts of application  
             developement and this is my portfolio 
           </p>
         </div>
         <Social/>
-        <br></br><br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <Down >
+          <Link to="About" smooth={true} duration={800}>
+            <img src={ downArrow } className="quote" alt="down" height="30px"></img>
+          </Link>
+        </Down>
       </StyledHome>
       </>
 

@@ -6,7 +6,7 @@ import './quotes.css'
  
 const Inspire = styled.div`
     padding: 85px 20% 120px 20%;
-    background: #0D2538;
+    background: #264653;
 
     @media (max-width: 1000px){
         padding: 50px 10% 100px 10%;
@@ -23,15 +23,15 @@ const Quote = styled.div`
     text-align: left;
 `
 const Saying = styled.div`
-color: Red;
-font-size: 250x;
-text-align: right;
+    color: Red;
+    font-size: 250x;
+    text-align: right;
 `
 
 function Inspiration(){
     return(
         <Inspire >
-            <img src={ Open } alt="a" width="100px" height="100px" className="quote" id="INSPIRATION"></img>
+            <img src={ Open } alt="a" width="100px" height="100px" className="quote" id="Inspiration"></img>
             <Quote>
                 If you fail, never give up because F.A.I.L means "First Attempt In Learning"<br/>
             </Quote>

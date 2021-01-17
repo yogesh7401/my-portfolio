@@ -7,12 +7,18 @@ import Col from 'react-bootstrap/Col';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const StyledSkill = styled.div`
+import bgimg from './Image/skills.jpg';
+    background: #2a9d8f;
     padding-top:50px;
     padding-bottom:50px;
-    background : grey;
 .out{
     margin-top: 50px;
+}
+h5 {
+    color: white
 } `
+
+
 
 
 function Skills(){
@@ -64,7 +70,7 @@ const content = skills.map((skill) => (
     
 return(
     <StyledSkill>
-        <h4 style={{textAlign:'center'}}   id="SKILLS">SKILLS </h4>
+        <h4 style={{textAlign:'center'}}   id="Skills">SKILLS </h4>
         <Container className="out">
                 {content}
         </Container>

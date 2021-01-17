@@ -4,10 +4,10 @@ import { Link } from "react-scroll";
 
 const Nav = styled.nav`
   width: 100%;
-  height: 40px;
+  height: 50px;
   position: fixed;
   z-index: 100;
-  background: rgba(68, 36, 97);
+  background: #2a9d8f;
   @media (max-width: 600px) {
     transform: ${({ open }) => open ? 'translateY(0)' : 'translateY(-100%)'};
     transition: '1s ease'; 
@@ -17,13 +17,13 @@ const Ul = styled.ul`
   cursor: pointer;
   list-style: none;
   display: flex;
-  width: 420px;
+  width: 531px;
   text-align: left;
   backgroud-color: black;
   z-index: 100;
   flex-flow: row nowrap;
   li {
-    padding: 8px 10px;
+    padding: 12px 20px;
   }
 
   
@@ -46,12 +46,11 @@ const Ul = styled.ul`
  const StyledLink = styled(Link)`
   text-decoration: none;
   color: white;
-  font-weight: bold;
-  font-size: 15px;
+  font-size: 18px;
 
   &:hover {
   text-decoration: none;
-  color: #0D2538
+  color: #e76f51
   }
   
  `;
@@ -63,8 +62,7 @@ function Toggle({ open , menu }){
  
 
   return (<>
-  <Nav>
-      <div>
+  <Nav className="shadow-lg">
         <Ul open={open} style={{margin:"auto"}}>
           <li>
             <StyledLink activeClass="active" 
@@ -78,7 +76,6 @@ function Toggle({ open , menu }){
             <StyledLink activeClass="active"
                           to={ menu[1] }
                           smooth={true}
-                          offset={-50}
                           duration={800}>
                             { menu[1] }
             </StyledLink>
@@ -87,7 +84,8 @@ function Toggle({ open , menu }){
             <StyledLink activeClass="active"
                           to={menu[2]}
                           smooth={true}
-                          duration={800}>
+                          duration={800}
+                          offset={-50}>
                             { menu[2] }
             </StyledLink>
           </li>
@@ -111,7 +109,6 @@ function Toggle({ open , menu }){
             </StyledLink>
           </li><br/>
         </Ul> 
-      </div>
       </Nav>
     </>
     

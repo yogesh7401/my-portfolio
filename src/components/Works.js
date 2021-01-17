@@ -85,7 +85,7 @@ function Works() {
                     </Card>
                   ))
   return (
-    <StyledWorks ClassName="card" id="WORKS">
+    <StyledWorks ClassName="card" id="Works">
       <h4 style={{textAlign:"center"}}>MY WORKS </h4>
         <Cards>
           {content}

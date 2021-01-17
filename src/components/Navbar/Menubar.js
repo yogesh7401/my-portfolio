@@ -42,7 +42,7 @@ const Burger = () => {
         <div />
       </StyledBurger>
     <center>
-      <Toggle id="Navbar" open={open} menu={["HOME","ABOUT","WORKS","SKILLS","INSPIRATION"]}/>
+      <Toggle id="Navbar" open={open} menu={["Home","About","Works","Skills","Inspiration"]}/>
     </center>
     </>
   )

@@ -50,7 +50,7 @@ const Ul = styled.ul`
 
   &:hover {
   text-decoration: none;
-  color: #e76f51
+  color: #f6bd60
   }
   
  `;

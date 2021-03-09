@@ -22,7 +22,7 @@ const Quote = styled.div`
     text-align: left;
 `
 const Saying = styled.div`
-    color: Red;
+    color: #f6bd60;
     font-size: 250x;
     text-align: right;
 `

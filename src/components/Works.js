@@ -8,6 +8,7 @@
  import Calculator from './Image/Calculator.PNG'
  import SGHRM from './Image/sghrm.jpg'
  import bg from './Image/noisy.png'
+ import chatbot from './Image/bot.png'
 
 
  const StyledWorks = styled.div`
@@ -73,6 +74,14 @@ function Works() {
       url: 'https://github.com/yogesh7401/SG-HRM_solutions', 
       image: SGHRM, 
       imageId: '5'
+    },
+    {
+      id: 6, 
+      title: "ChatBot_Gui :", 
+      discription: "A simple chatbot using tkinter, its done by user response keyword is closely match to trained statement", 
+      url: 'https://github.com/yogesh7401/ChatBot_Gui', 
+      image: chatbot, 
+      imageId: '6'
     }
   ];
   const content = posts.map((post) => (
@@ -86,7 +95,7 @@ function Works() {
                   ))
   return (
     <StyledWorks ClassName="card" id="Works">
-      <h4 style={{textAlign:"center"}}>MY WORKS </h4>
+      <h3 style={{textAlign:"left"}}>My works </h3>
         <Cards>
           {content}
         </Cards>

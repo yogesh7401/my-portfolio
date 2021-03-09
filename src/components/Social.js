@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Icon = styled(SocialIcon)`
     margin-left: 20px;
-    margin-top: 80px;
+    margin-top: 50px;
     
     @media (max-width: 600px){
         margin-left:8px;

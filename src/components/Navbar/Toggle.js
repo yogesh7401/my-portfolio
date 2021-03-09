@@ -7,7 +7,7 @@ const Nav = styled.nav`
   height: 50px;
   position: fixed;
   z-index: 100;
-  background: #2a9d8f;
+  background: #ef233c;
   @media (max-width: 600px) {
     transform: ${({ open }) => open ? 'translateY(0)' : 'translateY(-100%)'};
     transition: '1s ease'; 

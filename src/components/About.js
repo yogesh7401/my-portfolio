@@ -7,7 +7,6 @@ const StyledAbout = styled.div`
     color: white;
     padding: 150px 20% 160px 20%;
     p{
-        font-family: Gill Sans Extrabold, sans-serif;
         letter-spacing: 0.05em;
         line-spacing: 0.05em;
         text-indent: "15%";
@@ -21,7 +20,7 @@ function About(){
     return(
         <>
         <StyledAbout id="About">
-            <h3 style={{color:"black",fontFamily: "'open san',  sans-serif"}}>About Me</h3><br></br>
+            <h3 style={{color:"black"}}>About Me</h3><br></br>
             <p style={{textIndent:"20%"}}> My self Yogeshwaran , I hail from Chennai. I did my Intermediate from State Board with 85% and 
                     High school from State Board with 90%. Now I'm studing in DMI engineering college. I like Mathematics, Because In my schooling days, I have scored High marks in that subject compared to 
                     chemistry, physics. My Hobby is playing Cricket. My Strength is takes Initiative to work independently, Adaptable to any kind of situation 

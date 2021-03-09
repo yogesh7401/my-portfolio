@@ -8,7 +8,7 @@ const StyledFooter = styled.div`
     padding-top: 30px;
     font-size: 12px;
 p{
-    width:240px;
+    width:250px;
     margin-left: auto;
     margin-right: auto;
 }

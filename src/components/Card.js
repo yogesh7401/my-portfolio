@@ -7,6 +7,7 @@ const StyledCard = styled.div`
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
     width:220px;
     margin: 10px 10px 10px 10px;
+    background: white;
 
     @media (max-width:1310px){
         width:220px;
@@ -48,9 +49,8 @@ function Card({ image, imageId, url ,title , discription}){
         <StyledCard id="hover">
             <a  href={ url }>
             <img src={ image }  alt={ imageId } id="card" height='130' style={{marginLeft:"10px",marginTop:"10px"}} />
-            <p style={{marginTop:"10px"}}><b>{ title } </b>
-            <br />
-            { discription }</p>
+            <p style={{marginTop:"10px"}}><b>{ title } </b></p>
+            <p>{ discription }</p>
             
             </a>
         </StyledCard>

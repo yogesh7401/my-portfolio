@@ -6,6 +6,7 @@ import { Link } from "react-scroll";
 
 
 const StyledHome = styled.div`
+    color: white;
     position: absolute;
     top: 53%;
     left: 50%;
@@ -13,7 +14,6 @@ const StyledHome = styled.div`
 
     h3{
       font-family: Arial, sans-serif;
-      color: black;
       margin-bottom: 1.5px;
 
     }
@@ -24,7 +24,6 @@ const StyledHome = styled.div`
     }
     p{
       margin-bottom: 1.5px;
-      color: black;
       font-size: 18px;
       font-weight: 2px;
     }
@@ -46,7 +45,6 @@ const StyledHome = styled.div`
 `
 
 const Down = styled.div`
-    
     text-align: center;
     position:absolute;
     bottom:0;
@@ -67,6 +65,8 @@ const Home = () => {
           </p>
         </div>
         <Social/>
+        <br></br>
+        <br></br>
         <br></br>
         <br></br>
         <br></br>

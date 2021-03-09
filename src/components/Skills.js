@@ -70,7 +70,7 @@ const content = skills.map((skill) => (
     
 return(
     <StyledSkill>
-        <h4 style={{textAlign:'center'}}   id="Skills">SKILLS </h4>
+        <h3 style={{textAlign:'center'}}   id="Skills">Skills </h3>
         <Container className="out">
                 {content}
         </Container>

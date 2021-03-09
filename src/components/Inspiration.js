@@ -6,7 +6,7 @@ import './quotes.css'
  
 const Inspire = styled.div`
     padding: 85px 20% 120px 20%;
-    background: #264653;
+    background: #2b2d42;
 
     @media (max-width: 1000px){
         padding: 50px 10% 100px 10%;
@@ -17,7 +17,6 @@ const Inspire = styled.div`
 `
 const Quote = styled.div`
     padding: 0 10% 0 10%;
-    font-family: "open san" , sanserif;
     color: White;
     font-size: 20px;
     text-align: left;
